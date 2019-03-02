@@ -8,6 +8,7 @@ RSpec.describe "Products", type: :feature do
     Order.destroy_all
   end
 
+  #works fine in manual testing, but not here
   describe "creating products" do
     it 'shows created product and does not redirect', js: :true do
       visit new_product_path
