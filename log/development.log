@@ -2075,3 +2075,110 @@ Processing by ProductsController#create as */*
 Completed 200 OK in 36ms (Views: 18.7ms | ActiveRecord: 8.1ms)
 
 
+Started GET "/products/index" for ::1 at 2019-05-16 21:20:16 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 11ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=index):
+  
+app/controllers/products_controller.rb:29:in `show'
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.0ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_jessicagladstone__rbenv_versions_______lib_ruby_gems_______gems_web_console_______lib_web_console_templates_console_js_erb__716327251443616646_70280891692020 at /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.8ms)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.4ms)
+Started GET "/products/show" for ::1 at 2019-05-16 21:20:31 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=show):
+  
+app/controllers/products_controller.rb:29:in `show'
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.7ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from acceptable_content_type? at /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/middleware.rb:58)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from ___sers_jessicagladstone__rbenv_versions_______lib_ruby_gems_______gems_web_console_______lib_web_console_templates_console_js_erb__716327251443616646_70280846510860 at /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb:491)
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.2ms)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendering /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/jessicagladstone/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (52.3ms)
+Started GET "/products" for ::1 at 2019-05-16 21:20:40 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 171ms (Views: 166.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/products/31.json" for ::1 at 2019-05-16 21:20:45 -0400
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"31"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?[0m  [["product_id", 31]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (19.8ms)
+Completed 200 OK in 71ms (Views: 67.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/products/31.json" for ::1 at 2019-05-16 21:20:48 -0400
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"31"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?[0m  [["product_id", 31]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (2.35ms)
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/32.json" for ::1 at 2019-05-16 21:20:50 -0400
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"32"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+[active_model_serializers]   [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?[0m  [["product_id", 32]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (2.53ms)
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+
+
