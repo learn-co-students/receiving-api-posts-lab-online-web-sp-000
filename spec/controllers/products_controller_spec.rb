@@ -14,7 +14,7 @@ RSpec.describe ProductsController, type: :controller do
     it 'creates a new product without redirect' do
       post :create, params: {product: @product_attributes}
       expect(response).to_not redirect_to(products_path)
-      expect(Product.count).to eq 1
+      expect(Product.count).to eq 2
     end
 
   end
