@@ -1693,3 +1693,34 @@ Processing by ProductsController#create as */*
   [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
   [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?  [["product_id", 21]]
 Completed 201 Created in 75ms (Views: 66.6ms | ActiveRecord: 2.4ms)
+Started GET "/products" for 127.0.0.1 at 2019-07-02 14:07:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (37.1ms)
+Started GET "/products" for 127.0.0.1 at 2019-07-02 14:07:24 -0400
+Completed 200 OK in 2070ms (Views: 2005.7ms | ActiveRecord: 2.2ms)
+
+
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 103ms (Views: 87.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2019-07-02 14:07:39 -0400
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+Started GET "/products/new" for 127.0.0.1 at 2019-07-02 14:07:43 -0400
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (4254.7ms)
+  Rendered products/new.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 112ms (Views: 109.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 4616ms (Views: 4570.6ms | ActiveRecord: 0.0ms)
+
+
