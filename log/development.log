@@ -1693,3 +1693,118 @@ Processing by ProductsController#create as */*
   [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
   [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?  [["product_id", 21]]
 Completed 201 Created in 75ms (Views: 66.6ms | ActiveRecord: 2.4ms)
+Started GET "/" for 89.201.217.252 at 2019-10-03 12:20:48 +0000
+Cannot render console from 89.201.217.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 28ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 89.201.217.252 at 2019-10-03 12:20:56 +0000
+Cannot render console from 89.201.217.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (1070.9ms)
+Completed 200 OK in 1531ms (Views: 1499.6ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/products" for 89.201.217.252 at 2019-10-03 12:21:33 +0000
+Cannot render console from 89.201.217.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wLh2m/HEk5Vi2gpML9xgPpoIdVooIyIJRG+jr5t1KR/eRBLEtNpzsSkitfSouP5GuIPRXdhRJx9W+++l0MB4MA==", "product"=>{"name"=>"TEst", "price"=>"1", "description"=>"as", "inventory"=>"1"}}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "price", "created_at", "updated_at", "inventory", "description") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "TEst"], ["price", 1], ["created_at", "2019-10-03 12:21:33.200173"], ["updated_at", "2019-10-03 12:21:33.200173"], ["inventory", 1], ["description", "as"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.2ms)
+Completed 201 Created in 65ms (Views: 55.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/products/new" for 89.201.217.252 at 2019-10-03 12:23:01 +0000
+Cannot render console from 89.201.217.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 42ms (Views: 25.9ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/products" for 89.201.217.252 at 2019-10-03 12:23:04 +0000
+Cannot render console from 89.201.217.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RB9aEtLcq3OxcCAVdW2GWOPVh+AouXkFiLQTNyCxnFBa4z5Nl8JLV/qIn63yCRggwV4j59jLfBOaIF89awTNfw==", "product"=>{"name"=>"", "price"=>"", "description"=>"", "inventory"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "created_at", "updated_at", "description") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["created_at", "2019-10-03 12:23:04.725418"], ["updated_at", "2019-10-03 12:23:04.725418"], ["description", ""]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?[0m  [["product_id", 23]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (85.02ms)
+Completed 201 Created in 136ms (Views: 125.5ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/products/new" for 89.201.217.252 at 2019-10-03 12:23:09 +0000
+Cannot render console from 89.201.217.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 89.201.217.252 at 2019-10-03 12:23:21 +0000
+Cannot render console from 89.201.217.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZvRmFfVS8IQjtZ9Dw8CUjh9N4mXIKQJnDOHXbsBOVOR4CAJKsEwQoGhNIPtEpAr2PcZGYjhbB3EedZtki/sFyw==", "product"=>{"name"=>"TEst", "price"=>"1", "description"=>"sad", "inventory"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "price", "created_at", "updated_at", "inventory", "description") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "TEst"], ["price", 1], ["created_at", "2019-10-03 12:23:21.785669"], ["updated_at", "2019-10-03 12:23:21.785669"], ["inventory", 1], ["description", "sad"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers]   [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" INNER JOIN "ordered_products" ON "orders"."id" = "ordered_products"."order_id" WHERE "ordered_products"."product_id" = ?[0m  [["product_id", 24]]
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (2.56ms)
+Completed 201 Created in 10ms (Views: 3.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/products/new" for 89.201.217.252 at 2019-10-03 12:27:44 +0000
+Cannot render console from 89.201.217.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (1287.8ms)
+Completed 200 OK in 1690ms (Views: 1661.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/new" for 89.201.217.252 at 2019-10-03 12:31:26 +0000
+Cannot render console from 89.201.217.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (444.8ms)
+Completed 500 Internal Server Error in 449ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `product' for #<#<Class:0x0000000003e633d8>:0x00007f7c4002f210>
+Did you mean?  @product):
+    14:   <%= f.submit "submit" %>
+    15: <% end %>
+    16: 
+    17: <button class="js-more" data-id="<%= product.id %>">More Info</button>
+    18: 
+    19: 
+    20: 
+  
+app/views/products/new.html.erb:17:in `_app_views_products_new_html_erb___1674172171896846469_70085813304620'
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.8ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from block in render_exception_with_web_console at /usr/local/rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/extensions.rb:16)
+Started GET "/products/new" for 89.201.217.252 at 2019-10-03 12:32:10 +0000
+Cannot render console from 89.201.217.252! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
